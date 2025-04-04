@@ -27,7 +27,7 @@ public class AuthSeriveImpl implements AuthService {
     public String login(String email, String password) {
         return "";
     }
-
+//Check
     @Override
     public UserDTO signup(SignupDTO signupDTO) {
       userRepository.findByEmail(signupDTO.getEmail()).orElseThrow(() ->
